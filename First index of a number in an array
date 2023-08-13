@@ -16,7 +16,7 @@ public class Runner {
 	public static void main(String[] args) {
 		int[] input = takeInput();
 		int x = s.nextInt();
-		System.out.println(Solution.firstIndex(input, x));
+		System.out.println(firstIndex(input, x));
 	}
 public static int helper(int[] input,int x,int si)
 	{
