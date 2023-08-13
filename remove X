@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class runner 
+{
+  	static String ans="";
+	public static String removeX(String input)
+	{
+	 if(input.length()==0)
+	 {
+		 return "";
+	 }	
+	 if(input.charAt(0)!='x')
+	 {
+         ans+=input.charAt(0);
+	 }
+	 String s=removeX(input.substring(1));
+	 return ans;
+	}
+	public static void main(String[] args)
+  {
+		Scanner s = new Scanner(System.in);
+		String input = s.nextLine();
+		System.out.println(removeX(input));
+	}
+}
